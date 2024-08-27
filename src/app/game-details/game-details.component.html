@@ -1,0 +1,10 @@
+<div>
+    <h2>Detalles de {{ game.name }}</h2>
+    <ul>
+      <li *ngFor="let participant of game.participants">
+        {{ participant.name }} - Puntaje: {{ participant.score }}
+      </li>
+    </ul>
+    <button (click)="startGame()">Empezar Juego</button>
+  </div>
+  
